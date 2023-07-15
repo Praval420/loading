@@ -1,0 +1,54 @@
+:root {
+    --gradient: linear-gradient(145deg, #ee6352,rgb(116, 48, 48), purple,rgb(182, 121, 182),rgb(80, 66, 80),rgb(187, 187, 89),rgba(233, 233, 94, 0.836),rgb(160, 160, 102),rgb(223, 101, 121),#FDABDD, #360fe6,#38A2D7, #561139,rgb(126, 35, 126),#FFDB01, #0E197D,grey,orange,#0099f7, #f11712,rgb(130, 231, 184),rgb(100, 114, 100));
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+.load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-size: 300%;
+    background-image: linear-gradient(to right, #0099f7, #f11712);
+    animation-name: praval007;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.loading{
+    display: flex;
+    position: relative;
+    height: 80%;
+    width: 80%;
+    border: 30px solid rgb(121, 12, 88);
+    border-style:groove;
+    border-inline-color: var(--gradient);
+    background-size: 900%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: var(--gradient);
+    animation-name: praval007;
+    animation-duration: 30s;
+    animation-iteration-count:infinite;
+}
+.loader{
+    font-family: fantasy;
+    font-size: 60px;
+    text-align: center;
+}
+.progress{
+    font-size: 60px;
+    padding-left: 15px;
+}
+
+
+@keyframes praval007 {
+    0% {background-position: left}
+   100%{background-position: right;}
+}
